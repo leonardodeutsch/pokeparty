@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import pokemons from "./utilities/pokemons.js";
 
-const App = () => {
+const Pokemon = () => {
   const [pokemonSearched, setPokemonSearched] = useState('');
   const [filteredPokemon, setFilteredPokemon] = useState(pokemons);
 
@@ -16,9 +16,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>
-        PokeParty
-      </h1>
       <input type="text" className="search-pokemon" onChange={searchPokemon} placeholder="Search..."/>
       <div className="pokemon-list">
         {filteredPokemon.map(pokemon => (
@@ -29,4 +26,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Pokemon;
