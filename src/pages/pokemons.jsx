@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import pokemons from "./utilities/pokemons.js";
+import pokemons from "../utilities/pokemons.js";
 
 const Pokemon = () => {
   const [pokemonSearched, setPokemonSearched] = useState('');
