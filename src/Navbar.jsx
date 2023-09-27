@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Pokemon</Link>
+          <Link to="/pokemon">Pokemon</Link>
         </li>
       </ul>
     </nav>
