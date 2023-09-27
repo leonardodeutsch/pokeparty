@@ -30,6 +30,7 @@ const PokemonInfo = () => {
   return (
     <div>
       <h1>{pokemonInfo.name}</h1>
+      <img src={pokemonInfo.sprites.other['official-artwork']['front_default']}/>
     </div>
   );
 }
