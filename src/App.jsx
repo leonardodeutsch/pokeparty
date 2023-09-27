@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Pokemon from './pages/pokemons.jsx';
+import Pokemon from './pages/Pokemon.jsx';
 import Navbar from "./Navbar.jsx";
-import PokemonInfo from "./components/PokemonInfo.jsx";
+import PokemonInfo from "./pages/PokemonInfo.jsx";
 
 const App = () => {
 
