@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import pokemons from "../utilities/pokemons.js";
 import { Link } from "react-router-dom";
+import PokemonCard from "../components/PokemonCard.jsx";
 
 const Pokemon = () => {
   const [pokemonSearched, setPokemonSearched] = useState('');
@@ -20,9 +21,7 @@ const Pokemon = () => {
       <input type="text" className="search-pokemon" onChange={searchPokemon} placeholder="Search..."/>
       <div className="pokemon-list">
         {filteredPokemon.map(pokemon => (
-          <Link to={`/pokemon/${pokemon.id}`} key={pokemon.id}>
-            <div >{pokemon.id}. {pokemon.name.english}</div>
-          </Link>
+          <PokemonCard key={pokemon.id} id={pokemon.id} name={pokemon.name.english} type={pokemon.type} image={pokemon.image.thumbnail}/>
         ))}
       </div>
     </div>
